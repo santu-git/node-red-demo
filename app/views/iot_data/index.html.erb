@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>ID</th>
       <th>Te 101</th>
       <th>Te 102</th>
       <th>Logged on</th>
@@ -15,6 +16,7 @@
   <tbody>
     <% @iot_data.each do |iot_datum| %>
       <tr>
+        <td><%= iot_datum.id %></td>
         <td><%= iot_datum.te_101 %></td>
         <td><%= iot_datum.te_102 %></td>
         <td><%= iot_datum.logged_on %></td>
