@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Iot Data</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Te 101</th>
+      <th>Te 102</th>
+      <th>Logged on</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @iot_data.each do |iot_datum| %>
+      <tr>
+        <td><%= iot_datum.te_101 %></td>
+        <td><%= iot_datum.te_102 %></td>
+        <td><%= iot_datum.logged_on %></td>
+        <td><%= link_to 'Show', iot_datum %></td>
+        <td><%= link_to 'Edit', edit_iot_datum_path(iot_datum) %></td>
+        <td><%= link_to 'Destroy', iot_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Iot Datum', new_iot_datum_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Te 101:</strong>
+  <%= @iot_datum.te_101 %>
+</p>
+
+<p>
+  <strong>Te 102:</strong>
+  <%= @iot_datum.te_102 %>
+</p>
+
+<p>
+  <strong>Logged on:</strong>
+  <%= @iot_datum.logged_on %>
+</p>
+
+<%= link_to 'Edit', edit_iot_datum_path(@iot_datum) %> |
+<%= link_to 'Back', iot_data_path %>
